@@ -1,0 +1,388 @@
+*{
+  box-sizing: border-box;
+}
+body, 
+.container{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  min-width: 100%;
+  text-align: center;
+
+}
+img{
+  max-width: 100%;
+}
+.wrapper{
+  /*height: 100px;*/
+  background: 
+  linear-gradient(rgba(138, 6, 165, 0.75),
+  rgba(7, 74, 161, 0.76)),
+  url(./images/comp.jpg)no-repeat;
+  background-size: cover;
+  padding-bottom: 214px;
+  
+}
+
+/******************nav menu style.....flicking************/
+nav{
+  padding-top: 20px;
+}
+nav img{
+  z-index: -1;
+  align-self: center;
+  height: 150px;
+  width: 150px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  transition: all .2s;
+}
+.upper-nav{
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+nav ul li,a{
+  list-style-type: none;
+  text-decoration-line: none;
+}
+nav img:hover{
+  transform: scale(1.2) rotate(360deg);
+}
+
+nav ul li:last-child{
+    border-right: none;
+  }
+nav ul li a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  padding: 6px 16px;
+  padding-top: 0;
+  color: whitesmoke;
+  text-align: center;
+  }
+
+  li a:hover {
+    cursor: pointer;
+  background-color: #9104AE;
+}
+.active {
+  float: right;
+  color: #F1F1F6;
+   background-color: rgba(10, 207, 31, 0.97);
+   list-style-type: none;
+}
+.active:hover{
+  background-color: blueviolet;
+}
+
+/**************************about-me styleup!!!!**********/
+.about-me p{
+  margin: auto;
+  padding-top: 50px;
+  color: #ffffff;
+  font-family: "fantacy", sans-serif;
+ line-height: 1.5;
+  font-size: 26px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  justify-content: center;
+}
+.about-me{
+  padding-bottom: 45px;
+}
+.about-me h1{
+  z-index: -1;
+  margin:auto;
+  height: 50px;
+  width: 140px;
+  background: lawngreen;
+  border-radius: 25px;
+}
+
+/******************courses that stressed me juring the exams*********/
+.courses-content{
+  float: right;
+  width: 960px;
+  list-style-type: none;
+ /* background-color: rgba(54,232,229,0.1);*/
+  margin-top:0;
+  padding-left: 90px;
+  margin-left: 0;
+  border-bottom: 1px dotted gray;
+}
+.courses-content ul li, img{
+  /*border-radius: 25px;*/
+  width: 200px;
+  height: 150px;
+  display: inline-block;
+}
+.courses-content h1{
+  text-align: center;
+  background:gray;
+}
+/*hhhhhhhhhhhhhhhhhhhhhACHIEVEMENTSIIIIIIIIIIIIIIIIIIIIIII*/
+.resources-cont{
+
+  margin-bottom: 45px;
+  margin-left: 20px;
+}
+
+.myskills1 h1{
+  margin-top: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.myskills{
+  margin-bottom: 14px;
+}
+figcaption{
+  font:2.2em/1.  Arial, Helvetica, sans-serif ;
+  font-weight: 1.2em;
+}
+.Html{
+  background: rgba(128, 77, 202, 0.30);
+  padding: 1px;
+  border-right: 3.2px solid #7BFC00;
+  height: 65px;
+  width: 290px;
+  margin-bottom: 2px;
+}
+.css{
+  background: rgba(175, 222, 204, 0.83);
+  padding: 1px;
+  border-right: 3.2px solid #FC0004;
+  height: 65px;
+  width: 290px;
+  margin-bottom: 2px;
+}
+.javascript{
+  background: rgba(125, 211, 17, 0.22);
+  padding: 1px;
+  border-right: 3.2px solid rgba(0, 30, 252, 0.91);
+  height: 65px;
+  width: 290px;
+  margin-bottom: 2px;
+}
+.ict{
+  background: rgba(69, 12, 82, 0.17);
+  padding: 1px;
+  border-right: 3.2px solid #FC3900;
+  height: 65px;
+  width: 290px;
+  margin-bottom: 2px;
+}
+.myschools h2{
+  float: right;
+  margin-right: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+.myschools1{
+  height: 324px;
+  min-height: 100%;
+  float: right;
+  width: 500px;
+  margin-right: 10px;
+}
+.myschools1 img{
+ background: linear-gradient(rgba(55, 4, 142, 0.94),rgba(40, 0, 60, 0.84));
+  z-index: -1;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+/*********************achieve in style***************************/
+.achieve-cont{
+  display: flex;
+  justify-content: space-around;
+  background-color: #efe4ef;
+}
+.achieve-cont1, .achieve-cont2, .achieve-cont3{
+background: #fff;
+height: 360px;
+width: 260px;
+border-radius: 25px;
+border: 3px solid white;
+background: linear-gradient(rgba(30, 79, 56, 0.73),rgba(30, 44, 25, 0.43));
+}
+
+/*,,,,,,,,,,,,,,,,,,,,,,cards........................*/
+.header-title{
+  font-size:18px;
+  font-family:cursive;
+  color:lawngreen;
+}
+ .achieve-cont p{
+font:1em/1.3  Arial, Helvetica, sans-serif;
+color: rgba(241, 241, 244, 0.98);
+background: linear-gradient(rgba(80, 3, 2, 0.46),rgba(89, 2, 11, 0.57))
+}
+.card-action a{
+  background-color:black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 27px;
+  color:azure;
+}
+/*987656789098765678study.............*/
+.study1,
+.study2{
+  width: 46.5%;
+  font:1rem/1.5  Arial, Helvetica, sans-serif ;
+}
+.study2{
+  float: right
+}
+.study1{
+  float: left;
+}
+/*=================
+         contact
+   =================*/      
+.contact-wrap{
+  background: 
+  linear-gradient(rgba(2, 4, 24, 0.73),
+  rgba(3, 3, 27, 0.89)),
+  url(./images/driving2.png)no-repeat;
+  
+  background-size: cover;
+  height: 600px;
+}
+.contact-wrap,
+.message p{
+  z-index: 3;
+  font-family: 'lato' sans-serif;
+  color: #F1F1F7;
+  font-size: 23px;
+  line-height: 1.2;
+  text-align: center;
+}
+.contact-wrap,
+.message h1{
+  font-family: 'handlee' cursive;
+  color: #fff;
+  font-size: 30px;
+}
+form{
+  width: 96%;
+  max-width: 450px;
+  position: relative;
+  display: block;
+  margin:auto;
+}
+ 
+input,textarea{
+  margin: 20px auto;
+  display:block;
+  padding: 14px;
+  width: 100%;
+  max-width: 360px;
+  background-color: rgba(212, 216, 208, 0.9);
+  font-size: 55%;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  transition: border 0.3s ease-out;
+}
+/*********************************************######
+        keyframes
+ ********************************************######*/
+.send{
+  background:  rgba(75, 4, 116, 0.9);
+  font-size: 25px;
+  font-weight: bold;
+  color: #7BFC00;
+}
+
+.send:hover{
+  background: #bac22a;
+}
+.to-top{
+  float: right;
+  z-index: -1;
+  margin-right: 20px;
+  font-family: 'handlee';
+  font-style: italic;
+}
+.to-top a{
+  color:  rgba(75, 4, 116, 0.9);
+}
+footer{
+  font-size: 1.6em;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin:auto;
+  padding-left: 90px;
+  border-top: 1px dotted gray;
+  background: #4a148c;
+  display: inline-table;
+}
+footer p{
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer ul li,a{
+  display:inline-block;
+  list-style-type: none;
+  justify-content: space-around;
+  text-align: center;
+  list-style-type: none;
+  text-decoration-line: none;
+  color: #fff;
+}
+/**************************************  
+media queries
+***************************************/
+@media (max-width: 768px){
+  .wrapper{ background: linear-gradient(rgba(10, 19, 126, 0.68),
+   rgba(134, 4, 151, 0.78)),
+   url(./images/student1.jpg)no-repeat;
+   background-size: cover;
+   width: 100%;
+   padding-bottom: 100px;
+ }
+ .about-me p{
+   font-family: 'handlee', 'lato';
+   font-size: 24px;
+   line-height: 1.2;
+ }
+ }
+@media (max-width: 768px) {
+  .study{
+    width: 100%;
+    background: rgba(175, 222, 204, 0.83);
+  }
+  .study1,
+  .study2{
+    float: none;
+    width: 100%;
+    font: 1rem/1.2 arial;
+  }
+form{
+  width: 75%;
+}
+.message p{
+  padding: 12px 20px 20px 20px;
+}
+.to-top{
+  padding-bottom: 14px;
+}
+}
+@media (max-width: 768px) {
+  .resources-cont,
+  .achieve-cont,
+  .contact-wrap{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+/*float clear fix*/
+.group:after{
+  content: '''';
+  display: table;
+  clear: both;
+}
