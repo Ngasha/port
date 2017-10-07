@@ -49,9 +49,9 @@ body,
   display: flex;
   flex-direction: column;
   background: 
-  linear-gradient(rgba(138, 6, 165, 0.75),
-  rgba(171, 184, 199, 0.76)),
-  url(./images/comp.png)no-repeat;
+  linear-gradient(rgba(33, 8, 39, 0.75),
+  rgba(36, 42, 48, 0.87)),
+  url(./images/1.jpg)no-repeat;
   background-size: cover;
   min-width: 100%;
   text-align: center;
