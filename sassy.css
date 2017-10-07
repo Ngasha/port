@@ -330,6 +330,8 @@ media queries
 header ul li a{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size:20px;
+  list-style-type: none;
+  text-decoration-line: none;
 }
  .about-me img{
    float: none;
