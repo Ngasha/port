@@ -1,62 +1,136 @@
+/*=====================================
+==================body================*/
 *{
   box-sizing: border-box;
 }
-body, 
-.container{
+body,
+.container-aboutme,
+.container-hire,
+.container-projects{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  margin: auto;
-  min-width: 100%;
-  text-align: center;
+}
+/*===================================
+============container with profile=============*/
+.container-wrapper-flex{
+  display: flex;
+  flex-direction: row-reverse;
+  min-height: 30vh;
+  justify-content: center;
+}
 
+/*=========================================
+============button=========================*/
+.button{
+  height: 40px;
+  background-color: #0AA117;
+  width: 90px;
+  border-radius: 6px;
 }
-img{
-  max-width: 100%;
+/*================mission============*/
+.mission-flex{
+  height: 250px;
+  display: inline-flex;
+  width: 100%;
+  background: rgba(28, 34, 28, 0.82);
 }
-.wrapper{
-  /*height: 100px;*/
+.mission{
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  color:#ffffff;
+  font: 1.3rem/1.5  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*========================peter styles body
+========================================*/
+  .container{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background: 
   linear-gradient(rgba(138, 6, 165, 0.75),
-  rgba(7, 74, 161, 0.76)),
+  rgba(171, 184, 199, 0.76)),
   url(./images/comp.jpg)no-repeat;
   background-size: cover;
-  padding-bottom: 214px;
-  
+  min-width: 100%;
+  text-align: center;
+  margin: auto;
+}
+.img-prof {
+  padding-top: 4px;
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  height: auto;
+}
+.img-prof1{
+  width: fit-content;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-/******************nav menu style.....flicking************/
-nav{
-  padding-top: 20px;
+.prof-card{
+  margin-top: 25px;
+  width: 34%;
 }
-nav img{
+.blog-content{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.wrapa h2{
+  margin-top: 0;
+  color: #0AA117;
+  padding-top: 4px;
+}
+.wrapa p{
+  font: 1rem/1.5 Arial, Helvetica, sans-serif;
+}
+.wrapa{
+  background-color: rgba(223, 224, 231, 0.93);
+}
+
+/******************header menu style.....flicking************/
+header{
+  height: 30%;
+  width: 100%;
+  background-color: #000;
+  padding: 1em 0;
+}
+.about-me img{
+  margin-left: 25%;
+  margin-top: 22%;
   z-index: -1;
+  float: left;
   align-self: center;
   height: 150px;
   width: 150px;
-  border: 1px solid #000;
+  border: 1px solid #EB0FEB;
   border-radius: 50%;
   transition: all .2s;
 }
-.upper-nav{
-  padding-top: 20px;
+.main-header{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 
 }
-nav ul li,a{
+.peter1{
+  margin-right: auto;
+}
+header ul li,a{
   list-style-type: none;
   text-decoration-line: none;
 }
-nav img:hover{
+header img:hover{
   transform: scale(1.2) rotate(360deg);
 }
 
-nav ul li:last-child{
+header ul li:last-child{
     border-right: none;
   }
-nav ul li a{
+header ul li a{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 28px;
   padding: 6px 16px;
@@ -69,32 +143,24 @@ nav ul li a{
     cursor: pointer;
   background-color: #9104AE;
 }
-.active {
-  float: right;
-  color: #F1F1F6;
-   background-color: rgba(10, 207, 31, 0.97);
-   list-style-type: none;
-}
-.active:hover{
-  background-color: blueviolet;
-}
+
 
 /**************************about-me styleup!!!!**********/
 .about-me p{
-  margin: auto;
-  padding-top: 50px;
+  padding-top: 20%;
+  margin: 0 auto;
+  width: 75%;
   color: #ffffff;
-  font-family: "fantacy", sans-serif;
  line-height: 1.5;
   font-size: 26px;
-  font-family: Arial, Helvetica, sans-serif;
-
-  justify-content: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+justify-content: center;
 }
 .about-me{
   padding-bottom: 45px;
 }
 .about-me h1{
+  margin-left: 55%;
   z-index: -1;
   margin:auto;
   height: 50px;
@@ -114,100 +180,6 @@ nav ul li a{
   margin-left: 0;
   border-bottom: 1px dotted gray;
 }
-.courses-content ul li, img{
-  /*border-radius: 25px;*/
-  width: 200px;
-  height: 150px;
-  display: inline-block;
-}
-.courses-content h1{
-  text-align: center;
-  background:gray;
-}
-/*hhhhhhhhhhhhhhhhhhhhhACHIEVEMENTSIIIIIIIIIIIIIIIIIIIIIII*/
-.resources-cont{
-
-  margin-bottom: 45px;
-  margin-left: 20px;
-}
-
-.myskills1 h1{
-  margin-top: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.myskills{
-  margin-bottom: 14px;
-}
-figcaption{
-  font:2.2em/1.  Arial, Helvetica, sans-serif ;
-  font-weight: 1.2em;
-}
-.Html{
-  background: rgba(128, 77, 202, 0.30);
-  padding: 1px;
-  border-right: 3.2px solid #7BFC00;
-  height: 65px;
-  width: 290px;
-  margin-bottom: 2px;
-}
-.css{
-  background: rgba(175, 222, 204, 0.83);
-  padding: 1px;
-  border-right: 3.2px solid #FC0004;
-  height: 65px;
-  width: 290px;
-  margin-bottom: 2px;
-}
-.javascript{
-  background: rgba(125, 211, 17, 0.22);
-  padding: 1px;
-  border-right: 3.2px solid rgba(0, 30, 252, 0.91);
-  height: 65px;
-  width: 290px;
-  margin-bottom: 2px;
-}
-.ict{
-  background: rgba(69, 12, 82, 0.17);
-  padding: 1px;
-  border-right: 3.2px solid #FC3900;
-  height: 65px;
-  width: 290px;
-  margin-bottom: 2px;
-}
-.myschools h2{
-  float: right;
-  margin-right: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  position: relative;
-}
-.myschools1{
-  height: 324px;
-  min-height: 100%;
-  float: right;
-  width: 500px;
-  margin-right: 10px;
-}
-.myschools1 img{
- background: linear-gradient(rgba(55, 4, 142, 0.94),rgba(40, 0, 60, 0.84));
-  z-index: -1;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-}
-/*********************achieve in style***************************/
-.achieve-cont{
-  display: flex;
-  justify-content: space-around;
-  background-color: #efe4ef;
-}
-.achieve-cont1, .achieve-cont2, .achieve-cont3{
-background: #fff;
-height: 360px;
-width: 260px;
-border-radius: 25px;
-border: 3px solid white;
-background: linear-gradient(rgba(30, 79, 56, 0.73),rgba(30, 44, 25, 0.43));
-}
 
 /*,,,,,,,,,,,,,,,,,,,,,,cards........................*/
 .header-title{
@@ -215,52 +187,34 @@ background: linear-gradient(rgba(30, 79, 56, 0.73),rgba(30, 44, 25, 0.43));
   font-family:cursive;
   color:lawngreen;
 }
- .achieve-cont p{
-font:1em/1.3  Arial, Helvetica, sans-serif;
-color: rgba(241, 241, 244, 0.98);
-background: linear-gradient(rgba(80, 3, 2, 0.46),rgba(89, 2, 11, 0.57))
-}
-.card-action a{
-  background-color:black;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 27px;
-  color:azure;
-}
-/*987656789098765678study.............*/
-.study1,
-.study2{
-  width: 46.5%;
-  font:1rem/1.5  Arial, Helvetica, sans-serif ;
-}
-.study2{
-  float: right
-}
-.study1{
-  float: left;
-}
+ 
 /*=================
          contact
-   =================*/      
+   =================*/    
+   .container-wrapper3{
+     
+   }  
 .contact-wrap{
   background: 
   linear-gradient(rgba(2, 4, 24, 0.73),
   rgba(3, 3, 27, 0.89)),
   url(./images/driving2.png)no-repeat;
-  
+  margin: auto;
   background-size: cover;
   height: 600px;
+  padding-top:50px;
+  text-align: center;
 }
 .contact-wrap,
 .message p{
   z-index: 3;
-  font-family: 'lato' sans-serif;
   color: #F1F1F7;
-  font-size: 23px;
-  line-height: 1.2;
+  font: 1.2rem/1.5 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
 }
 .contact-wrap,
 .message h1{
+  margin-top: 0;
   font-family: 'handlee' cursive;
   color: #fff;
   font-size: 30px;
@@ -310,15 +264,34 @@ input,textarea{
 .to-top a{
   color:  rgba(75, 4, 116, 0.9);
 }
+/***********************projects*********************/
+.buttonload {
+  background-color: #081661; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 24px; /* Some padding */
+  font-size: 16px; /* Set a font-size */
+}
+
+/* Add a right margin to each icon */
+.fa {
+margin:auto;
+}
+.downloading{
+    min-height: 30vh;
+    margin-top: 22%;
+    margin-left: 25%;
+}
 footer{
   font-size: 1.6em;
   top: 0;
   left: 0;
   width: 100%;
   margin:auto;
-  padding-left: 90px;
+  text-align: center;
+
   border-top: 1px dotted gray;
-  background: #4a148c;
+  background: #000;
   display: inline-table;
 }
 footer p{
@@ -337,6 +310,11 @@ footer ul li,a{
 /**************************************  
 media queries
 ***************************************/
+@media (min-width:768px){
+  .kasuku{
+    min-height: calc(100vh-89px);
+  }
+}
 @media (max-width: 768px){
   .wrapper{ background: linear-gradient(rgba(10, 19, 126, 0.68),
    rgba(134, 4, 151, 0.78)),
@@ -345,8 +323,43 @@ media queries
    width: 100%;
    padding-bottom: 100px;
  }
+.main-header{
+  display: flex;
+  flex-direction: row;
+}
+header ul li a{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:20px;
+}
+ .about-me img{
+   float: none;
+   margin-left: 4%;
+   margin-top: 28%;
+   margin-bottom: -15%;
+ }
+ .container-wrapper-flex{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+ }
+ .mission-flex{
+   height: auto;
+   margin-top: 0;
+ }
+ .myskills{
+
+   margin: 15px;
+   width: 70%;
+   max-width: 100%;
+ }
+ .profile,
+ .prof-card{
+   width: 90%;
+   max-width: 100%;
+  margin: auto;
+ }
  .about-me p{
-   font-family: 'handlee', 'lato';
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    font-size: 24px;
    line-height: 1.2;
  }
@@ -379,10 +392,3 @@ form{
     width: 100%;
     flex-wrap: wrap;
   }
-
-/*float clear fix*/
-.group:after{
-  content: '''';
-  display: table;
-  clear: both;
-}
