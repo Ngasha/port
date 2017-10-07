@@ -272,7 +272,9 @@ input,textarea{
   padding: 12px 24px; /* Some padding */
   font-size: 16px; /* Set a font-size */
 }
-
+.downloading button{
+  height: 55px;
+}
 /* Add a right margin to each icon */
 .fa {
 margin:auto;
