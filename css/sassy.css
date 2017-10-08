@@ -3,6 +3,9 @@
 *{
   box-sizing: border-box;
 }
+body{
+  margin: 0;
+}
 body,
 .container-aboutme,
 .container-hire,
@@ -51,7 +54,7 @@ body,
   background: 
   linear-gradient(rgba(13, 10, 14, 0.75),
   rgba(22, 20, 22, 0.87)),
-  url(./images/pasture.jpg)no-repeat;
+  url(../images/pasture.jpg)no-repeat;
   background-size: cover;
   min-width: 100%;
   text-align: center;
@@ -198,7 +201,7 @@ justify-content: center;
   background: 
   linear-gradient(rgba(2, 4, 24, 0.73),
   rgba(3, 3, 27, 0.89)),
-  url(./images/driving2.png)no-repeat;
+  url(../images/driving2.png)no-repeat;
   margin: auto;
   background-size: cover;
   height: 600px;
