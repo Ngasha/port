@@ -6,13 +6,22 @@
 body{
   margin: 0;
 }
-body,
+/*body,
 .container-aboutme,
 .container-hire,
 .container-projects{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  flex: 1;
+}*/
+.kasuku{
+  flex: 1;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 /*===================================
 ============container with profile=============*/
@@ -320,6 +329,9 @@ button{
 }
 button:hover{
   background-color: #D7EE09;
+}
+.body{
+  display
 }
 /**************************************  
 media queries
