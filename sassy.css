@@ -6,18 +6,17 @@
 body{
   margin: 0;
 }
-/*body,
+body,
 .container-aboutme,
 .container-hire,
-.container-projects{
+.container-projects,
+.kasuku{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  flex: 1;
-}*/
-.kasuku{
-  flex: 1;
+  
 }
+
 body{
   display: flex;
   flex-direction: column;
