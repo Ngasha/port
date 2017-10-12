@@ -11,12 +11,36 @@ body,
 .container-hire,
 .container-projects,
 .kasuku{
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   
 }
-
+/*++++++++++++++++++++middle overlay++++++++++++
++++++++++++++*/
+.middle{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.img-prof:hover{
+  opacity: 0.6;
+  background: linear-gradient(rgba(13, 10, 14, 0.75),rgba(3, 3, 27, 0.89));
+}
+.img-prof, .middle:hover{
+  opacity: 1;
+}
+.text{
+  height: 50px;
+  width: 95px;
+  border-radius: 6px;
+  background-color: #000f50;
+  color: white;
+  font-size: 18px;
+  padding: 16px 32px;
+}
 body{
   display: flex;
   flex-direction: column;
@@ -29,6 +53,16 @@ body{
   flex-direction: row-reverse;
   min-height: 30vh;
   justify-content: center;
+}
+.container-course{
+  margin-right: 60px;
+  margin-top: 25px;
+  width: 28%;
+}
+.content h3{
+  font-family: 'Almendra';
+  text-align: center;
+  color: #0dA167;
 }
 
 /*=========================================
@@ -52,6 +86,10 @@ body{
   text-align: center;
   color:#ffffff;
   font: 1.3rem/1.5  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.mission h1{
+  font-family: 'Almendra';
+  font-size:28px;
 }
 /*========================peter styles body
 ========================================*/
@@ -94,12 +132,17 @@ body{
   margin-top: 0;
   color: #0AA117;
   padding-top: 4px;
+  font-family: 'sofia';
+  font-size:20px;
 }
 .wrapa p{
   font: 1rem/1.5 Arial, Helvetica, sans-serif;
 }
 .wrapa{
   background-color: rgba(223, 224, 231, 0.93);
+  box-shadow: 2px 6px 10px 2px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 6px;
 }
 
 /******************header menu style.....flicking************/
@@ -155,7 +198,43 @@ header ul li a{
   background-color: #9104AE;
 }
 
-
+  /*hhhhhhhhhhhhhhhhhhhhhACHIEVEMENTSIIIIIIIIIIIIIIIIIIIIIII*/
+.achieved h2{
+  text-align: center;
+  color: blue;
+}
+  .Html{
+    background: rgba(128, 77, 202, 0.30);
+    padding: 1px;
+    border-right: 3.2px solid #7BFC00;
+    height: 65px;
+    width: 100%;
+    margin-bottom: 2px;
+  }
+  .css{
+    background: rgba(175, 222, 204, 0.83);
+    padding: 1px;
+    border-right: 3.2px solid #FC0004;
+    height: 65px;
+    width: 100%;
+    margin-bottom: 2px;
+  }
+  .javascript{
+    background: rgba(125, 211, 17, 0.22);
+    padding: 1px;
+    border-right: 3.2px solid rgba(0, 30, 252, 0.91);
+    height: 65px;
+    width: 100%;
+    margin-bottom: 2px;
+  }
+  .ict{
+    background: rgba(69, 12, 82, 0.17);
+    padding: 1px;
+    border-right: 3.2px solid #FC3900;
+    height: 65px;
+    width: 100%;
+    margin-bottom: 2px;
+  }
 /**************************about-me styleup!!!!**********/
 .about-me p{
   padding-top: 20%;
@@ -164,7 +243,7 @@ header ul li a{
   color: #ffffff;
  line-height: 1.5;
   font-size: 26px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:'sofia';
 justify-content: center;
 }
 .about-me{
@@ -202,14 +281,12 @@ justify-content: center;
 /*=================
          contact
    =================*/    
-   .container-wrapper3{
-     
-   }  
+  
 .contact-wrap{
-  background: 
+  /*background: 
   linear-gradient(rgba(2, 4, 24, 0.73),
   rgba(3, 3, 27, 0.89)),
-  url(./images/driving2.png)no-repeat;
+  url(./images/driving2.png)no-repeat;*/
   margin: auto;
   background-size: cover;
   height: 600px;
@@ -218,16 +295,16 @@ justify-content: center;
 }
 .contact-wrap,
 .message p{
-  z-index: 3;
-  color: #F1F1F7;
-  font: 1.2rem/1.5 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  z-index: 1;
+  color: #06060E;
+  font: 1.2rem/1.5 'Artifika';
   text-align: center;
 }
 .contact-wrap,
 .message h1{
   margin-top: 0;
   font-family: 'handlee' cursive;
-  color: #fff;
+  color: #0BD40B;
   font-size: 30px;
 }
 form{
@@ -309,7 +386,7 @@ footer{
 }
 footer p{
   color: #ffffff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Artifika';
 }
 footer ul li,a{
   display:inline-block;
@@ -329,8 +406,15 @@ button{
 button:hover{
   background-color: #D7EE09;
 }
-.body{
-  display
+
+
+.parallax{
+  background-image: url(./images/student.jpg);
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /**************************************  
 media queries
@@ -338,6 +422,9 @@ media queries
 @media (min-width:768px){
   .kasuku{
     min-height: calc(100vh-89px);
+  }
+  .parallax{
+    background-attachment: scroll;
   }
 }
 @media (max-width: 768px){
@@ -348,6 +435,7 @@ media queries
    width: 100%;
    padding-bottom: 100px;
  }
+
 .main-header{
   display: flex;
   flex-direction: row;
@@ -364,10 +452,16 @@ header ul li a{
    margin-top: 28%;
    margin-bottom: -15%;
  }
- .container-wrapper-flex{
+ .container-wrapper-flex,
+ .container-wrapper-flex1{
    display: flex;
    flex-wrap: wrap;
    flex-direction: column;
+ }
+ .wrapa1{
+   min-width: max-content;
+   margin-left: 30px;
+   box-shadow: 0 4px 8px 0 #504A4A;
  }
  .mission-flex{
    height: auto;
