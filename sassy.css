@@ -98,10 +98,11 @@ body{
   display: flex;
   flex-direction: column;
   background: 
-  linear-gradient(rgba(13, 10, 14, 0.75),
-  rgba(22, 20, 22, 0.87)),
+  linear-gradient(rgba(13, 19, 100, 0.75),
+  rgba(6, 139, 201, 0.9)),
   url(./images/pasture.jpg)no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   min-width: 100%;
   text-align: center;
   margin: auto;
@@ -357,8 +358,21 @@ input,textarea{
   background-color: #081661; /* Green background */
   border: none; /* Remove borders */
   color: white; /* White text */
-  padding: 12px 24px; /* Some padding */
-  font-size: 16px; /* Set a font-size */
+  padding: 10px 24px; /* Some padding */
+  font-size: 18px; /* Set a font-size */
+  font-family: 'sofia';
+}
+.container-wrapper4, .downloading h3 p{
+  font-family:  'artifika';
+}
+.container-wrapper4{
+  background: 
+  linear-gradient(rgba(13, 19, 100, 0.75),
+  rgba(6, 139, 201, 0.9)),
+  url(./images/pasture.jpg)no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-width: 100%;
 }
 .downloading button{
   height: 55px;
@@ -367,10 +381,10 @@ input,textarea{
 .fa {
 margin:auto;
 }
-.downloading{
-    min-height: 30vh;
-    margin-top: 22%;
-    margin-left: 25%;
+.container-wrapper4, .downloading h3 p{
+  min-height: 30vh;
+  text-align: center;
+  margin: auto;
 }
 footer{
   font-size: 1.6em;
@@ -430,12 +444,17 @@ media queries
 @media (max-width: 768px){
   .container{ background: linear-gradient(rgba(22, 67, 97, 0.68),
    rgba(4, 43, 151, 0.78)),
-   url(./images/student.jpg)no-repeat;
+   url(./images/nganga.jpg)no-repeat;
    background-size: cover;
+   background-attachment: fixed;
+   background-position-x: right;
    width: 100%;
    padding-bottom: 100px;
  }
-
+ol ul li{
+  list-style-type: none;
+  text-underline-position: none;
+}
 .main-header{
   display: flex;
   flex-direction: row;
