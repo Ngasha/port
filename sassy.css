@@ -442,8 +442,8 @@ media queries
   }
 }
 @media (max-width: 768px){
-  .container{ background: linear-gradient(rgba(22, 67, 97, 0.68),
-   rgba(4, 43, 151, 0.78)),
+  .container{ background: linear-gradient(rgba(3, 3, 14, 0.89),
+   rgba(4, 15, 15, 0.59)),
    url(./images/nganga.jpg)no-repeat;
    background-size: cover;
    background-attachment: fixed;
@@ -487,8 +487,7 @@ header ul li a{
    margin-top: 0;
  }
  .myskills{
-
-   margin: 15px;
+   margin-left: 44px;
    width: 70%;
    max-width: 100%;
  }
@@ -530,5 +529,15 @@ form{
   .contact-wrap{
     width: 100%;
     flex-wrap: wrap;
-  }
+  } 
+    /*menu bar*/
+    .menu-bars, .bar1, .bar2, .bar3{
+      width: 35px;
+      height: 5px;
+      background-color: #ffffff;
+      margin: 6px 0;
+    }
 }
+
+
+
