@@ -489,6 +489,10 @@ header ul li a{
    margin-top: 28%;
    margin-bottom: -15%;
  }
+ .about-me p{
+   background: rgb(212, 207, 207);
+   color: rgb(8, 8, 8);
+ }
  .container-wrapper-flex,
  .container-wrapper-flex1{
    display: flex;
