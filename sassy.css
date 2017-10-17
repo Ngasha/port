@@ -25,13 +25,11 @@ body,
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.img-prof:hover{
-  opacity: 0.6;
-  background: linear-gradient(rgba(13, 10, 14, 0.75),rgba(3, 3, 27, 0.89));
+.img-prof{
+  opacity: 0.5;
+  background: linear-gradient(rgba(17, 11, 19, 0.75),rgba(21, 21, 29, 0.89));
 }
-.img-prof, .middle:hover{
-  opacity: 1;
-}
+
 .text{
   height: 50px;
   width: 95px;
@@ -54,11 +52,7 @@ body{
   min-height: 30vh;
   justify-content: center;
 }
-.container-course{
-  margin-right: 60px;
-  margin-top: 25px;
-  width: 28%;
-}
+
 .content h3{
   font-family: 'Almendra';
   text-align: center;
@@ -87,9 +81,18 @@ body{
   color:#ffffff;
   font: 1.3rem/1.5  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.mission h1{
+.mission h1 p{
   font-family: 'Almendra';
   font-size:28px;
+  text-align: center;
+}
+.hire-me button{
+  width:36%;
+  height: 10%;
+  border-radius: 14px;
+  background: #504A4A;
+  font-size: 18px;
+  font-family: 'artifika';
 }
 /*========================peter styles body
 ========================================*/
@@ -430,6 +433,7 @@ button:hover{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 /**************************************  
 media queries
 ***************************************/
@@ -440,10 +444,15 @@ media queries
   .parallax{
     background-attachment: scroll;
   }
+  .container-course{
+    margin-right: 60px;
+    margin-top: 25px;
+    width: 86%;
+  }
 }
 @media (max-width: 768px){
-  .container{ background: linear-gradient(rgba(3, 3, 14, 0.89),
-   rgba(4, 15, 15, 0.59)),
+  .container{ background: linear-gradient(rgba(70, 38, 70, 0.137),
+   rgba(85, 80, 85, 0.164)),
    url(./images/nganga.jpg)no-repeat;
    background-size: cover;
    background-attachment: fixed;
@@ -455,9 +464,18 @@ ol ul li{
   list-style-type: none;
   text-underline-position: none;
 }
+.hire-me button{
+  width:74%;
+  height: 10%;
+  border-radius: 14px;
+  background: #504A4A;
+  font-size: 15px;
+  font-family: 'artifika';
+}
 .main-header{
   display: flex;
   flex-direction: row;
+  overflow: hidden;
 }
 header ul li a{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -482,6 +500,10 @@ header ul li a{
    margin-left: 30px;
    box-shadow: 0 4px 8px 0 #504A4A;
  }
+ .container-course{
+   width: 50%;
+   margin-top:20px;
+ }
  .mission-flex{
    height: auto;
    margin-top: 0;
@@ -496,6 +518,7 @@ header ul li a{
    width: 90%;
    max-width: 100%;
   margin: auto;
+  margin-top: 10px;
  }
  .about-me p{
    font-size: 24px;
