@@ -25,10 +25,7 @@ body,
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.img-prof{
-  opacity: 0.5;
-  background: linear-gradient(rgba(17, 11, 19, 0.75),rgba(21, 21, 29, 0.89));
-}
+
 
 .text{
   height: 50px;
@@ -148,6 +145,9 @@ body{
   transition: 0.3s;
   border-radius: 6px;
 }
+.overlay{
+  background-color: rgba(12, 12, 15, 0.288);
+}
 /***************work================
 ============================
 ==============*/
@@ -158,7 +158,6 @@ body{
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  border-bottom: 1px solid rgb(88, 85, 85);
 }
 .icon-work{
   display: flex;
@@ -227,8 +226,10 @@ header ul li:last-child{
   }
 header ul li a{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 28px;
+  font-size: 22px;
   padding: 6px 16px;
+  list-style-type: none;
+  text-decoration-style: none;
   padding-top: 0;
   color: whitesmoke;
   text-align: center;
@@ -251,6 +252,14 @@ header ul li a{
     height: 65px;
     width: 100%;
     margin-bottom: 2px;
+  }
+  .jQuery{
+      background: rgba(79, 84, 94, 0.3);
+      padding: 1px;
+      border-right: 3.2px solid rgb(0, 118, 252);
+      height: 65px;
+      width: 100%;
+      margin-bottom: 2px;
   }
   .css{
     background: rgba(175, 222, 204, 0.83);
@@ -496,6 +505,7 @@ media queries
    url(./images/nganga.jpg)no-repeat;
    background-size: cover;
    background-attachment: fixed;
+   background-position: center;
    background-position-x: right;
    width: 100%;
    padding-bottom: 100px;
@@ -624,6 +634,48 @@ form{
       margin: 6px 0;
     }
 }
+
+/*==========selectors====================
+======================\=
+============================*/
+input[type="email"]{
+  background:rgb(188, 189, 185);
+}
+
+input:focus,
+textarea:focus{
+  border-bottom: 2px solid#7BFC00;
+}
+
+.element:not(.first1){
+  border-left: 2px dotted #FC3900;
+}
+
+.element p::first-letter{
+  float: left;
+  font-size: 30px;
+  color: #0BD40B;
+  padding: 2px 0 5px  0;
+  background: #fff;
+  margin: 2px 0 5px 0;
+  border-radius: 5px;
+  line-height: .5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
