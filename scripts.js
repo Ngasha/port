@@ -1,0 +1,1 @@
+$(".downloading, .hire-me").hide().show("slow");
