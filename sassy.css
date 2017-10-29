@@ -26,7 +26,6 @@ body,
   transform: translate(-50%, -50%);
 }
 
-
 .text{
   height: 50px;
   width: 95px;
@@ -45,7 +44,7 @@ body{
 ============container with profile=============*/
 .container-wrapper-flex{
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   min-height: 30vh;
   justify-content: center;
 }
@@ -58,7 +57,7 @@ body{
 
 /*=========================================
 ============button=========================*/
-.button{
+.btw1{
   height: 40px;
   background-color: #0AA117;
   width: 90px;
@@ -85,9 +84,9 @@ body{
 }
 .hire-me button{
   width:36%;
-  height: 10%;
-  border-radius: 14px;
-  background: #504A4A;
+  height: 20%;
+  border-radius: 6px;
+  background: rgb(175, 115, 115);
   font-size: 18px;
   font-family: 'artifika';
 }
@@ -98,8 +97,8 @@ body{
   display: flex;
   flex-direction: column;
   background: 
-  linear-gradient(rgba(13, 19, 100, 0.75),
-  rgba(6, 139, 201, 0.9)),
+    linear-gradient(rgba(72, 81, 187, 0.836),
+  rgba(133, 169, 202, 0.658)),
   url(./images/pasture.jpg)no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -107,12 +106,14 @@ body{
   text-align: center;
   margin: auto;
 }
+.content h2{
+  text-align: center;
+}
 .img-prof {
-  padding-top: 4px;
-  display: block;
-  width: fit-content;
-  max-width: 100%;
-  height: auto;
+  display: inline-block;
+  height: 10em;
+  border-radius: 48%;
+  margin-left: 20%;
 }
 .img-prof1{
   width: fit-content;
@@ -186,12 +187,7 @@ body{
   font-size: 16px;
 }
 /******************header menu style.....flicking************/
-header{
-  height: 30%;
-  width: 100%;
-  background-color: #000;
-  padding: 1em 0;
-}
+
 .about-me img{
   margin-left: 25%;
   margin-top: 22%;
@@ -204,43 +200,79 @@ header{
   border-radius: 50%;
   transition: all .2s;
 }
-.main-header{
+
+.read-more{
+  padding: 5px;
+  text-align: center;
+  background-color: #0f2ab4;
+  border: solid 1px #0BD40B;
+}
+#p1{
+  display: none;
+}
+
+
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+/*=============my-info==========
+================
+===========================*/
+.my-info{
+  padding: 25px;
+  min-height: 65vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: #7bb3b3;
+}
+.true-info{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: row;
 
 }
-.peter1{
-  margin-right: auto;
+.element2{
+  flex: 2 200px;
+  flex-direction: row;
+  max-width: 60%;
+  padding: 15px 12px;
+  margin: auto;
 }
-header ul li,a{
-  list-style-type: none;
-  text-decoration-line: none;
-}
-header img:hover{
-  transform: scale(1.2) rotate(360deg);
-}
-
-header ul li:last-child{
-    border-right: none;
-  }
-header ul li a{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 22px;
-  padding: 6px 16px;
-  list-style-type: none;
-  text-decoration-style: none;
-  padding-top: 0;
-  color: whitesmoke;
-  text-align: center;
-  }
-
-  li a:hover {
-    cursor: pointer;
-  background-color: #9104AE;
+/* Container around content */
+.container2,
+.container3 {
+  padding: 10px 40px;
+  background-color: inherit;
+  width: 50%;
 }
 
-  /*hhhhhhhhhhhhhhhhhhhhhACHIEVEMENTSIIIIIIIIIIIIIIIIIIIIIII*/
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+
+
+
+
+
+
+
+/*hhhhhhhhhhhhhhhhhhhhhACHIEVEMENTSIIIIIIIIIIIIIIIIIIIIIII*/
 .achieved h2{
   text-align: center;
   color: blue;
@@ -463,13 +495,13 @@ footer ul li,a{
 .mission h1{
   font-size: 1em;
 }
-button{
+.btw1{
   height:48px;
   width: 120px;
   border-radius: 6px;
   background-color: #0AA117;
 }
-button:hover{
+.btw1:hover{
   background-color: #D7EE09;
 }
 
@@ -500,8 +532,8 @@ media queries
   }
 }
 @media (max-width: 768px){
-  .container{ background: linear-gradient(rgba(70, 38, 70, 0.137),
-   rgba(85, 80, 85, 0.164)),
+  .container{ background: linear-gradient(rgba(116, 58, 116, 0.397),
+   rgba(116, 15, 156, 0.315)),
    url(./images/nganga.jpg)no-repeat;
    background-size: cover;
    background-attachment: fixed;
@@ -540,8 +572,10 @@ header ul li a{
    margin-bottom: -15%;
  }
  .about-me p{
-   background: rgb(212, 207, 207);
+   background: rgb(202, 139, 67);
    color: rgb(8, 8, 8);
+   border-top: 1px solid #0BD40B;
+   border-radius: 8px;
  }
  .container-wrapper-flex,
  .container-wrapper-flex1{
@@ -567,7 +601,11 @@ header ul li a{
    width: 70%;
    max-width: 100%;
  }
- .personality{
+/*=================ngash=====
+=====================
+=============================*/
+ .personality,
+ .my-info{
    flex-wrap: wrap;
    display: flex;
    flex-direction: column;
@@ -586,6 +624,32 @@ header ul li a{
  .element h3{
    margin: 0 auto;
  }
+ /*=============my true info==========
+ ===============================*/
+ .true-info{
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+}
+ .element2{
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 18%;
+  font: .86em/1.5 arial;
+}
+.container2,
+.container3{
+  min-width: fit-content;
+  margin: 0 auto;
+  padding: 0 2px 1px 0;
+  font-size: 1em;
+  line-height: 1.354;
+  margin-bottom: 1.3em;
+}
+.container2 h2 ,
+.container3 h2 {
+  margin-bottom: 0;
+}
  .profile,
  .prof-card{
    width: 90%;
@@ -664,6 +728,82 @@ textarea:focus{
 
 
 
+
+/*timeline================
+================*/
+
+
+/*====================
+======image overlay
+*/
+#overlay{
+  background: rgba(16, 17, 16, 0.822);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+
+}
+
+
+/*============
+======
+++++++++menu+++++++*/
+#menu {
+	background: #000508;
+	height: 80px;
+	padding: 0 5px 0;
+  text-align: center;
+  
+}
+
+#menu ul {
+	list-style: none;
+}
+
+#menu ul li {
+	display: inline-block;
+	width: 84px;
+  text-align: center;
+  
+}
+
+#menu ul li a {
+	color: #fff;
+	width: 100%;
+	line-height: 60px;
+  text-decoration: none;
+  font-size: 20px;
+}
+/*#menu{
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+*/
+#menu ul li a:hover {
+    cursor: pointer;
+  background-color: #9104AE;
+}
+select {
+	width: 84%;
+	margin: 30px  0 11px 2%;
+  float: left;
+}
+/*modify css to hide links on small resolution and show button and select
+//hide  select and button on larger screens and shows links*/
+@media(min-width:320px) and (max-width:568px){
+  #menu ul{
+    display:none;
+  }
+}
+
+@media (min-width:568px){
+  #menu select, #menu button{
+    display:none;
+  }
+}
 
 
 

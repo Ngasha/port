@@ -11,80 +11,82 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fontawesome.io/icons/">
   <meta charset="UTF-8">
+
 </head>
 <body>
   <!-- *************menu head***** about me, resume, resources,dp,contact******-->
-  <header>
-    <ul class="main-header">
-      <div class="peter1"><li><a href="#petero">Peter</a></li></div>
-      <li><a href="#mii">About me</a></li>
-      <li><a href="#mimi">Hire</a></li>
-      <li><a href="#projects">Projects</a></li>
-    </ul>
-    <div class="menu-bars" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-    </div>
- </header>
-<div class="container">
+      <div id="menu">
+        <ul>
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="#mii">About me</a></li>
+          <li><a href="#mimi">Hire</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </div>
+    <div class="container">
 
-  <!-- *************about me starts in this div of about-me******************************-->
-  <div class="container-wrapper" id="petero">
-        <div class="about-me">
-          <img src="./images/weru1.jpg" alt="">
-          <p >Hi, <br/>Welcome, Am Peter, a web developer based in Nairobi, Kenya. I enjoy working on usable, clean and practical Websites.</p>
-          <div class="hire-me">
-            <button><a href="#mimi"><h3>Yes! am available for hire</h3></a></button>
-          </div>
-        </div>
-  </div>
-  </div>
-  </div>
+        <!--<div class="flip menu-bars">
+            <div class="bar1" id="panel"></div>
+            <div class="bar2" id="panel"></div>
+            <div class="bar3" id="panel"></div>
+        </div>-->
+        
+
+
+      <!-- *************about me starts in this div of about-me******************************-->
+      <div class="container-wrapper" id="petero">
+            <div class="about-me">
+              <img src="./images/weru1.jpg" alt="">
+              <p >Hi, <br/>Welcome, Am Peter, a web developer based in Nairobi, Kenya. I enjoy working on usable, clean and practical Websites.</p>
+              <div class="hire-me">
+                <span><a href="#mimi"><h3>Yes! am available for hire</h3></a></span>
+              </div>
+            </div>
+      </div>
+      </div>
+      </div>
 <!--===================about me container=============
   ===================-->
-  <div class="container-aboutme" id="mii">
-        <div class="container-wrapper-flex">
-            <div class="wrapa profile1 prof-card flexer">
-              
-                 <img class="overlay img-prof" src="./images/weru1.jpg" alt="">
-            
-              <div class="middle">
-                <div class="text">peter</div>
+      <section class="my-info">
+        <div class="true-info">
+            <div class="container2 element2">
+              <div class="content">
+                <img class="img-prof" src="./images/nganga.jpg" alt=""> 
+                <h2>peter</h2>
+                <div class="blog-content">
+                    <h2>Front End web developer</h2>
+                    <p>Life in college was a bit tricky, and this made me think of working for something bigger other than just working hard in class only to graduate with a Diploma in Information Technology, I made a step forward and decided to start web development. I always loved browsing and evaluating websites and wanted to create my own company. </p>
+                    <div class="read-more">continue<p id="p1">I started an online web development class at Treehouse and learnt the programming course which has brought me this far.</p>
+                    </div>
+                </div>
               </div>
-                <div class="wrapa blog-content">
-                  <h2>Front End web developer</h2>
-                  <p>Life in college was a bit tricky, and this made me think of working for something bigger other than just working hard in class only to graduate with a Diploma in Information Technology, I made a step forward adn decided to start web development. I always loved browsing and evaluating websites and wanted to create my own company. I started an online web development class at Treehouse and learnt the programming course which has brought me this far.</p>
+            </div>
+            <div class="container3 element2">
+                <div class="content">
+                  <h2>school</h2>
+                  <p>To me learning programming was a journey. The desire to have everyone connected to my staff and seeing my development seen in the whole world was all that i wanted. I started an online Web development course at Team Treehouse where i acquire the following skills; <h3>my skills</h3>
+                  <div class="myskills flexer">
+                      <div class="achieved Html">
+                        <h2>Html</h2>
+                      </div>
+                      <div class="achieved css">
+                          <h2>CSS</h2>
+                      </div>
+                      <div class="achieved javascript">
+                            <h2>javascript</h2>
+                      </div>
+                      <div class="achieved jQuery">
+                          <h2>jquery</h2>
+                      </div>
+                      <div class="achieved ict">
+                        <h2>Diploma in ICT</h2>
+                    </div>
+                </div>
                 </div>
             </div>
-            <div class="container-wrapper-flex1">
-                <div class="container-course">
-                  <div class="wrapa1 wrapa">
-                      <img src="./images/lapi.jpg" alt="" class="course1" width="100%">
-                      <div class="content">
-                        <h3>my skills</h3>
-                        <div class="myskills flexer">
-                            <div class="achieved Html">
-                              <h2>Html</h2>
-                            </div>
-                            <div class="achieved css">
-                                <h2>CSS</h2>
-                            </div>
-                            <div class="achieved javascript">
-                                  <h2>javascript</h2>
-                            </div>
-                            <div class="achieved jQuery">
-                                <h2>jquery</h2>
-                            </div>
-                            <div class="achieved ict">
-                              <h2>Diploma in ICT</h2>
-                          </div>
-                        </div>
-                   </div>
-                  </div>
-                </div>
-            </div>
-        </div>
+          </div>
+      </section>
+  
                     <!--===============================personality job===========
               =============================================
               =============================-->
@@ -127,7 +129,7 @@
                   <input type="text" id="name" name="user_name" placeholder="Name" required>
                   <input type="email" id="mail" name="user-mail" class="label" placeholder="Email" required>
                   <textarea id="message" name="user_message" placeholder="hello! peter" required></textarea>
-                  <button><a href="mailto:waeru.ngash@gmail.com?subject=hello peter!">Send</a></button>
+                  <button class="btw1"><a href="mailto:waeru.ngash@gmail.com?subject=hello peter!">Send</a></button>
                 </form>
             </setion>
           </div>
@@ -161,9 +163,9 @@
       </div>
       </div>
 </div>  
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="scripts.js" charset="utf-8"></script>
-
 <!--,,,,,,,,,,,,,,,,,,,,,,,,,footer...............................-->
   <footer>
     <ul id="follow">
